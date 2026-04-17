@@ -22,4 +22,4 @@ def testgetbest(csv_file, expected_output):#Get the absolute path to the csv fil
 
 if __name__ == "__main__":
     testgetbest("testdat0.csv", "The top student was student 167381 with 90")
-    print("All tests passed!")
+    print("All tests passed")
