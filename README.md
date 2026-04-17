@@ -13,6 +13,18 @@ Printed the index, not the student number - Returned the index value instead of 
 
 ### Test Cases  
 The following test scenarios were ran and are included:  
-TEST FILE | DATA | EXPECTED OUTPUT
+TEST FILE | DATA | EXPECTED OUTPUT  
 testdat0.csv | Original data | The top student was 167381 with 90  
-testdat1_markfirst.csv | Different column order | The top student was 167381 with 90
+testdat1_markfirst.csv | Different column order | The top student was 167381 with 50  
+testdat2_onestudent.csv | One student in file | The top student was 1600071 with 72  
+testdat3_marksascending.csv | Marks in order (ascending) | The top student was 167381 with 99  
+testdat4_marksdescending.csv | Marks in order (descending) | The top student was 167381 with 99  
+
+### Running the tests  
+Git bash   
+
+# Run full test process  
+python tests/testgetbest1.py  
+
+# Run final test manually  
+python getbest.py testdat0.csv
