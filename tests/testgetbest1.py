@@ -3,7 +3,7 @@ import sys
 import os
 
 def run_test(csv_file, expected_output, test_name):
-    CSV_path = os.path.join(os.path.dirname(__file__), "..", csv_file)
+    csv_path = os.path.join(os.path.dirname(__file__), "..", csv_file)
     
     result = subprocess.run(
         [sys.executable, os.path.join(os.path.dirname(__file__), "..", "getbest.py"), csv_path],
