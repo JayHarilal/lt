@@ -2,4 +2,17 @@
 Student Name: Jayaveer Harilal  
 Student Number: 2110071  
 
-## Testing process 
+## Testing Process  
+This project demostrates the testing process for 'getbest.py' which finds the top student mark from a CSV file.  
+
+### Bugs found and fixes  
+Uninitialised variables in getCols() - 'num_col' and 'mark_col' could be returned when not assigned.  
+Column indexing - The list is 0-based but used a 1-based index.  
+Student number not captured because of index - 'best_idx' was not updated in findTop().  
+Printed the index, not the student number - Returned the index value instead of the student number.  
+
+### Test Cases  
+The following test scenarios were ran and are included:  
+TEST FILE | DATA | EXPECTED OUTPUT
+testdat0.csv | Original data | The top student was 167381 with 90  
+testdat1_markfirst.csv | Different column order | The top student was 167381 with 90
